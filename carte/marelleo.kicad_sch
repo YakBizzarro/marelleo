@@ -13,6 +13,145 @@
 		(comment 2 "Net names, values and footprints are those of the board; layout is new")
 	)
 	(lib_symbols
+		(symbol "+3V3_1"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_1_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Audio:MAX98357A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6560,7 +6699,7 @@
 		)
 		(uuid "59736d04-c08d-5d9b-8070-40217562e5ee")
 	)
-	(text "AP63203 is the fixed 3.3 V version:\nFB tied to the output through R4 = 0 R,\nR5 not fitted (ex-divider)."
+	(text "AP63203 is the fixed 3.3 V version:\n"
 		(exclude_from_sim no)
 		(at 220 112 0)
 		(effects
@@ -6697,6 +6836,12 @@
 			(justify left top)
 		)
 		(uuid "ef81345b-93bf-58c1-9f9b-d7988a1ccbf9")
+	)
+	(junction
+		(at 180.34 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d76ffa9-4c70-487e-9955-628fd0c97263")
 	)
 	(no_connect
 		(at 350.52 71.12)
@@ -7634,6 +7779,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 119.38) (xy 180.34 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c3d92d-3077-4303-bbd5-3f43f82f23bc")
+	)
+	(wire
+		(pts
 			(xy 116.84 163.83) (xy 116.84 162.56)
 		)
 		(stroke
@@ -7774,16 +7929,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 156.21) (xy 220.98 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af2e2ec5-7fcc-59ef-9ff5-930aea210042")
-	)
-	(wire
-		(pts
 			(xy 320.04 40.64) (xy 317.5 40.64)
 		)
 		(stroke
@@ -7821,26 +7966,6 @@
 			(type default)
 		)
 		(uuid "b4f857b4-dc58-5741-a655-760a4db48611")
-	)
-	(wire
-		(pts
-			(xy 193.04 156.21) (xy 193.04 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcd85773-2a57-5240-9f18-5e864b4ae439")
-	)
-	(wire
-		(pts
-			(xy 207.01 148.59) (xy 207.01 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be4e9ed5-9b5c-5e3b-816f-414747363f5f")
 	)
 	(wire
 		(pts
@@ -8984,29 +9109,6 @@
 			)
 		)
 	)
-	(global_label "EN_3V3"
-		(shape passive)
-		(at 180.34 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4571109c-8ba2-5125-aaf9-2101e4cbeb75")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "SD_MISO"
 		(shape passive)
 		(at 309.88 165.1 180)
@@ -9306,29 +9408,6 @@
 			)
 		)
 	)
-	(global_label "FB_3V3"
-		(shape passive)
-		(at 207.01 147.32 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "66a2474c-3c7d-5097-b4a5-0d74ae74be91")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 207.01 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "VSYS"
 		(shape passive)
 		(at 185.42 71.12 0)
@@ -9457,29 +9536,6 @@
 		(uuid "75912b89-9ee9-5d61-8f1b-cd8c684ea2c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 309.88 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "FB_3V3"
-		(shape passive)
-		(at 193.04 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "78ff2c39-7e3b-5a08-a1cf-3544777ea391")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.04 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9881,29 +9937,6 @@
 			)
 		)
 	)
-	(global_label "EN_3V3"
-		(shape passive)
-		(at 220.98 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a89a8a26-dc9b-5acd-9f78-c35f87ddcb82")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.98 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "TEST_RX"
 		(shape passive)
 		(at 353.06 43.18 0)
@@ -10009,29 +10042,6 @@
 		(uuid "b8b96974-7241-5b19-8ef7-c3a599698b6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 317.5 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "FB_3V3"
-		(shape passive)
-		(at 205.74 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bee3b49b-1b16-5e3b-bb35-00b10cf9c0dc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.74 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11055,6 +11065,86 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3V3_1")
+		(lib_id "power:+3V3")
+		(at 205.74 124.46 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "106fee9f-6783-415c-b8c4-05bc3825356f")
+		(property "Reference" "#PWR036"
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 209.55 124.4599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 205.74 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0b13c260-a201-4bc1-8ea3-17a2cb0f9761")
+		)
+		(instances
+			(project "marelleo"
+				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -13262,98 +13352,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 220.98 152.4 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "444ce39d-6066-5d6b-8c88-2c36c4f4fe02")
-		(property "Reference" "R6"
-			(at 223.52 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100 k"
-			(at 223.52 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 220.98 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100k"
-			(at 220.98 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25803"
-			(at 220.98 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b8ee4a81-62dd-5f29-b632-39d43fe397a4")
-		)
-		(pin "2"
-			(uuid "208eb0e8-ecdd-5a86-a0cd-32b7a5233441")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 378.46 113.03 0)
 		(unit 1)
@@ -14367,82 +14365,6 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 193.04 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5bbba40b-5e53-5f15-9164-70665b30fd8e")
-		(property "Reference" "#PWR035"
-			(at 193.04 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 193.04 145.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8017cbf4-a3c9-5188-ab08-2a16b265456a")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -17706,109 +17628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 193.04 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ba0a2dd6-0ae4-515e-b11f-be2f9f2305fa")
-		(property "Reference" "R4"
-			(at 195.58 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0 R"
-			(at 195.58 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 193.04 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "0R"
-			(at 193.04 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C21189"
-			(at 193.04 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "l'AP63203 sort 3.3 V tout seul, simple fil vers FB"
-			(at 193.04 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c5851f3-428e-5068-8af2-7bad4b78ab2f")
-		)
-		(pin "2"
-			(uuid "f03ccfe5-4a15-5e7f-a0af-39d8035cff46")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 125.73 240.03 0)
 		(unit 1)
@@ -20798,250 +20617,6 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 220.98 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecd4fbac-47f5-5e21-bd2e-3cc21641fb71")
-		(property "Reference" "#PWR037"
-			(at 220.98 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 220.98 145.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1af887ff-b340-5db1-91bd-c2c04e483f83")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 207.01 156.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f06dc890-d38c-504a-b5ba-9f02475d1398")
-		(property "Reference" "#PWR036"
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 207.01 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 207.01 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "67337004-ad89-52ce-8e6a-b2c92e08db15")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 207.01 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "f11452e4-718f-55fb-b956-3c07d2d316e3")
-		(property "Reference" "R5"
-			(at 209.55 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NP"
-			(at 209.55 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 207.01 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "non montee"
-			(at 207.01 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "ancien pont diviseur, supprime"
-			(at 207.01 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be67fc2b-033c-5560-a8ed-f5867bacdeee")
-		)
-		(pin "2"
-			(uuid "a00759d0-10e1-52de-bb9e-2cd27e13e22a")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "R5")
 					(unit 1)
 				)
 			)
