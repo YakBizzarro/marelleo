@@ -6843,6 +6843,12 @@
 		(color 0 0 0 0)
 		(uuid "6d76ffa9-4c70-487e-9955-628fd0c97263")
 	)
+	(junction
+		(at 181.61 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a83f54ce-e70d-459a-84ab-21e82b98e096")
+	)
 	(no_connect
 		(at 350.52 71.12)
 		(uuid "00026cad-694d-5410-8507-1408e7109c49")
@@ -7569,16 +7575,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 72.39) (xy 185.42 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6528b6dd-51cc-526b-8a8f-5827f23c9aeb")
-	)
-	(wire
-		(pts
 			(xy 210.82 199.39) (xy 213.36 199.39)
 		)
 		(stroke
@@ -7646,6 +7642,16 @@
 			(type default)
 		)
 		(uuid "72ac5824-01dd-5f0b-a710-2f2801ac31f5")
+	)
+	(wire
+		(pts
+			(xy 181.61 35.56) (xy 181.61 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "738d2614-5dbc-41ae-b275-795baf4dbb48")
 	)
 	(wire
 		(pts
@@ -7949,6 +7955,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 35.56) (xy 180.34 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14088ea-2af8-42c6-b4ea-a9bddb060384")
+	)
+	(wire
+		(pts
 			(xy 246.38 201.93) (xy 243.84 201.93)
 		)
 		(stroke
@@ -8089,16 +8105,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 80.01) (xy 185.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3ff3184-0eb8-5f81-befc-ae09ccd46f7d")
-	)
-	(wire
-		(pts
 			(xy 55.88 245.11) (xy 55.88 247.65)
 		)
 		(stroke
@@ -8119,7 +8125,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 40.64) (xy 180.34 40.64)
+			(xy 182.88 40.64) (xy 181.61 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8219,7 +8225,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 35.56) (xy 180.34 35.56)
+			(xy 182.88 35.56) (xy 181.61 35.56)
 		)
 		(stroke
 			(width 0)
@@ -8754,29 +8760,6 @@
 		(uuid "2cad341f-88ba-5e90-b783-e0e4a6966716")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 43.18 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "EN_5V"
-		(shape passive)
-		(at 185.42 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2d12f24a-1aca-56ef-bcb0-1680c3f1ef32")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9398,29 +9381,6 @@
 		(uuid "669ae459-056f-5e2f-9691-eb63aa528506")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 317.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape passive)
-		(at 185.42 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "675b7b17-99c8-5ceb-b397-9a62f495633f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10319,29 +10279,6 @@
 		(uuid "e153577c-2463-5dd2-aecb-7ee137c036a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 43.18 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "EN_5V"
-		(shape passive)
-		(at 180.34 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e2f450a6-3aee-54b1-8754-057f9ee8ecea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18059,98 +17996,6 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 185.42 76.2 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bdcb10f3-67bf-5542-8f0c-f71baf92d42d")
-		(property "Reference" "R3"
-			(at 187.96 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100 k"
-			(at 187.96 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 185.42 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100k"
-			(at 185.42 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25803"
-			(at 185.42 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "89b4501e-8824-53d9-a890-85b53da681dd")
-		)
-		(pin "2"
-			(uuid "537d5803-86f9-55ca-8331-9e76da663af2")
-		)
-		(instances
-			(project "marelleo"
-				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
-					(reference "R3")
 					(unit 1)
 				)
 			)
