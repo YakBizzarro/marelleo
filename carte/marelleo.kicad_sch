@@ -7148,10 +7148,6 @@
 		(uuid "e84a2632-7625-538a-b83f-e1de4e1627dc")
 	)
 	(no_connect
-		(at 350.52 81.28)
-		(uuid "ea661e4a-a953-492e-95f3-b0a32cf8f870")
-	)
-	(no_connect
 		(at 350.52 66.04)
 		(uuid "ec2f6d12-578a-5812-9ddf-859cd80006cd")
 	)
@@ -7242,6 +7238,16 @@
 			(type default)
 		)
 		(uuid "08e38ebd-563f-53f7-b135-3c054c604d26")
+	)
+	(wire
+		(pts
+			(xy 95.25 62.23) (xy 92.71 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b6fdd16-77a2-404f-b7fd-ddc5d2f80802")
 	)
 	(wire
 		(pts
@@ -8115,6 +8121,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 59.69) (xy 95.25 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9deb738d-cf2e-4415-b1d4-60bf0c601983")
+	)
+	(wire
+		(pts
 			(xy 67.31 205.74) (xy 67.31 207.01)
 		)
 		(stroke
@@ -8415,6 +8431,16 @@
 	)
 	(wire
 		(pts
+			(xy 350.52 81.28) (xy 354.33 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3502792-7ceb-42be-8645-a70d22fa5f3d")
+	)
+	(wire
+		(pts
 			(xy 210.82 201.93) (xy 213.36 201.93)
 		)
 		(stroke
@@ -8492,6 +8518,16 @@
 			(type default)
 		)
 		(uuid "f0d76d37-cfcb-588b-95a3-8a3313043995")
+	)
+	(wire
+		(pts
+			(xy 92.71 57.15) (xy 95.25 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2393d07-7f20-43b7-82b3-b829b067ae9a")
 	)
 	(wire
 		(pts
@@ -9876,6 +9912,30 @@
 			)
 		)
 	)
+	(global_label "LED_CONTROL"
+		(shape passive)
+		(at 92.71 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7900da34-74ab-47d6-9897-ef46c9413d41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.8942 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "BOUTON"
 		(shape passive)
 		(at 353.06 48.26 0)
@@ -10914,6 +10974,30 @@
 			)
 		)
 	)
+	(global_label "LED_CONTROL"
+		(shape passive)
+		(at 354.33 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fba33ebf-64fc-4943-b3bd-1f9ed7f5dd22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 369.1458 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 375.92 151.13 180)
@@ -11078,6 +11162,83 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 92.71 59.69 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02788912-649f-44c5-9697-ea511e1fa511")
+		(property "Reference" "#PWR037"
+			(at 92.71 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.51 59.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2eb63b74-0eff-4190-befb-be590b6fed10")
+		)
+		(instances
+			(project "marelleo"
+				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13227,6 +13388,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 100.33 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39ac1276-5b74-414d-add0-b469df8765cb")
+		(property "Reference" "J11"
+			(at 100.33 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "adressable LED"
+			(at 100.33 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal"
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JST PH 3 broches coude"
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C157929"
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "potentiometre"
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b724d5bc-e69c-450b-94fa-9d3e75347147")
+		)
+		(pin "2"
+			(uuid "f955b1b6-cc94-461d-a260-bc86bb355819")
+		)
+		(pin "3"
+			(uuid "08b02e0a-f187-44e0-adba-d49238847ef2")
+		)
+		(instances
+			(project "marelleo"
+				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 116.84 121.92 270)
 		(unit 1)
@@ -14013,6 +14278,83 @@
 			(project "marelleo"
 				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 62.23 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4da900c9-6662-4efc-babc-81ca578c7aa8")
+		(property "Reference" "#PWR073"
+			(at 92.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.51 62.23 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8074d65-ca9a-48d5-8621-7e32376267d2")
+		)
+		(instances
+			(project "marelleo"
+				(path "/9f14fc97-68cc-5572-9055-4c92035093f1"
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
